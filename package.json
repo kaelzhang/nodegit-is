@@ -49,6 +49,7 @@
   },
   "dependencies": {
     "execa": "^2.0.4",
-    "is-path-inside": "^3.0.1"
+    "is-path-inside": "^3.0.1",
+    "test-fixture": "^2.4.1"
   }
 }

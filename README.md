@@ -28,8 +28,28 @@ $ npm i @nodegit/is
 ```js
 const is = require('@nodegit/is')
 
-is.git(cwd)
+// Test if the current working directory is a git repo
+// or inside a git repo
+is.git()
+
+// Which is equivalent to
+is.git(process.cwd())
+
+// Test if the current working directory is the root of a git repo
+is.gitRoot()
 ```
+
+### git(dir = process.cwd()): boolean
+
+- **dir** `string=process.cwd()` the directory to be tested. If not specified, the current working directory will be used
+
+Returns `boolean` true if `cwd` is the root of a git repo or inside a git repo
+
+### gitRoot(dir = process.cwd()): boolean
+
+- **dir**
+
+Returns `boolean` true if `cwd` is the root of a git repo
 
 ## License
 
